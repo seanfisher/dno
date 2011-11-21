@@ -1076,3 +1076,15 @@ Served asset /home.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 16:30:40 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20111121225531)
+Migrating to SorceryRememberMe (20111121225532)
+Migrating to AddDetailsToUsers (20111121234259)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "first_name" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "last_name" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111121234259')[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
