@@ -1,10 +1,48 @@
+/* Variables */
+$bgcolor: #999999;
+$foregroundcolor: #fff;
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, aside, nav, article {
+  display: block;
+}
+/* new clearfix */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 body {
-  background-color: #fff;
+  background-color: $bgcolor;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
-
+header {
+  background-color: $foregroundcolor;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  h1 {
+    float: left;
+  }
+  nav {
+    float: right;
+  }
+}
+section {
+  background-color: $foregroundcolor;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -23,7 +61,7 @@ a {
     color: #fff;
     background-color: #000; } }
 
-div {
+div, section {
   &.field, &.actions {
     margin-bottom: 10px; } }
 
