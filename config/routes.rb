@@ -1,4 +1,8 @@
 Dno::Application.routes.draw do
+  resources :attributes
+
+  resources :activities
+
   resources :outings
 
   get "logout" => "sessions#destroy", :as => "logout"

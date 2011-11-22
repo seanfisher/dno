@@ -2858,3 +2858,3581 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 17:06:27
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 17:06:27 -0700
 Served asset /users.js - 304 Not Modified (0ms)
 Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20111121225531)
+Migrating to SorceryRememberMe (20111121225532)
+Migrating to CreateOutings (20111122054300)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "outings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" varchar(255), "rating" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111122054300')
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("outings")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (12.3ms)
+Compiled application.css  (2ms)  (pid 58139)
+Compiled outings.css  (6ms)  (pid 58139)
+Compiled scaffolds.css  (8ms)  (pid 58139)
+Compiled application.js  (3ms)  (pid 58139)
+Compiled outings.js  (99ms)  (pid 58139)
+Completed 200 OK in 300ms (Views: 298.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /outings.css - 200 OK (2ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /outings.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 22:44:56 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:00 -0700
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:00 -0700
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:00 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:00 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:00 -0700
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/outings/new" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+  Processing by OutingsController#new as HTML
+Rendered outings/_form.html.erb (7.9ms)
+Rendered outings/new.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:04 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/outings" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+  Processing by OutingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIBLJtoJoYW+T+bTHoi2CevNGqKYVFOFwKLR/UvcMpc=", "outing"=>{"title"=>"Cool", "description"=>"This is so cool!", "rating"=>"5"}, "commit"=>"Create Outing"}
+  [1m[36mSQL (29.0ms)[0m  [1mINSERT INTO "outings" ("created_at", "description", "rating", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 22 Nov 2011 05:45:18 UTC +00:00], ["description", "This is so cool!"], ["rating", 5], ["title", "Cool"], ["updated_at", Tue, 22 Nov 2011 05:45:18 UTC +00:00]]
+Redirected to http://localhost/outings/1
+Completed 302 Found in 38ms
+
+
+Started GET "/outings/1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+  Processing by OutingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" WHERE "outings"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered outings/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+Served asset /outings.css - 304 Not Modified (1ms)
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+Served asset /home.css - 304 Not Modified (1ms)
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings/1/edit" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+  Processing by OutingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" WHERE "outings"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered outings/_form.html.erb (6.3ms)
+Rendered outings/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:24 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/outings/1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+  Processing by OutingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIBLJtoJoYW+T+bTHoi2CevNGqKYVFOFwKLR/UvcMpc=", "outing"=>{"title"=>"Cool", "description"=>"This is so cool!", "rating"=>"5"}, "commit"=>"Update Outing", "id"=>"1"}
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" WHERE "outings"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://localhost/outings/1
+Completed 302 Found in 7ms
+
+
+Started GET "/outings/1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+  Processing by OutingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" WHERE "outings"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered outings/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 22:45:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+SQLite3::SQLException: no such table: specific_outings: SELECT "outings".* FROM "outings" INNER JOIN "specific_outings" ON "outings"."id" = "specific_outings"."outing_id" WHERE "specific_outings"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20111121225531)
+Migrating to SorceryRememberMe (20111121225532)
+Migrating to CreateOutings (20111122054300)
+Migrating to CreateSpecificOutingsTable (20111122055925)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "specific_outings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "outing_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111122055925')
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("outings")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("specific_outings")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_remember_me_token')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20111121225531)
+Migrating to SorceryRememberMe (20111121225532)
+Migrating to CreateOutings (20111122054300)
+Migrating to CreateSpecificOutingsTable (20111122055925)
+Migrating to CreateActivities (20111122060632)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "duration" integer, "price" decimal, "description" varchar(255), "location" varchar(255), "attribute_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111122060632')
+Migrating to CreateAttributes (20111122060750)
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "attributes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111122060750')
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("activities")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("attributes")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("outings")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("specific_outings")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_remember_me_token')
+
+
+Started GET "/attributes" for 127.0.0.1 at 2011-11-21 23:10:01 -0700
+  Processing by AttributesController#index as HTML
+  [1m[36mAttribute Load (0.1ms)[0m  [1mSELECT "attributes".* FROM "attributes" [0m
+Rendered attributes/index.html.erb within layouts/application (20.1ms)
+Compiled application.css  (2ms)  (pid 58445)
+Compiled activities.css  (7ms)  (pid 58445)
+Compiled attributes.css  (0ms)  (pid 58445)
+Compiled application.js  (4ms)  (pid 58445)
+Compiled activities.js  (70ms)  (pid 58445)
+Compiled attributes.js  (50ms)  (pid 58445)
+Completed 200 OK in 287ms (Views: 285.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /attributes.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /attributes.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /outings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:02 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:06 -0700
+Served asset /activities.css - 200 OK (2ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:06 -0700
+Served asset /outings.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:06 -0700
+Served asset /activities.js - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:06 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:06 -0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/attributes/new" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+  Processing by AttributesController#new as HTML
+Rendered attributes/_form.html.erb (7.4ms)
+Rendered attributes/new.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:07 -0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started POST "/attributes" for 127.0.0.1 at 2011-11-21 23:10:14 -0700
+  Processing by AttributesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIBLJtoJoYW+T+bTHoi2CevNGqKYVFOFwKLR/UvcMpc=", "attribute"=>{"title"=>"Outdoor", "description"=>"Anything related to outside"}, "commit"=>"Create Attribute"}
+  [1m[35mSQL (15.4ms)[0m  INSERT INTO "attributes" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 22 Nov 2011 06:10:15 UTC +00:00], ["description", "Anything related to outside"], ["title", "Outdoor"], ["updated_at", Tue, 22 Nov 2011 06:10:15 UTC +00:00]]
+Redirected to http://localhost/attributes/1
+Completed 302 Found in 44ms
+
+
+Started GET "/attributes/1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+  Processing by AttributesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAttribute Load (0.1ms)[0m  [1mSELECT "attributes".* FROM "attributes" WHERE "attributes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered attributes/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:15 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/activity" for 127.0.0.1 at 2011-11-21 23:10:23 -0700
+
+ActionController::RoutingError (No route matches [GET] "/activity"):
+  
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+  Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.1ms)[0m  SELECT "activities".* FROM "activities" 
+Rendered activities/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /attributes.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:26 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/activities/new" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+  Processing by ActivitiesController#new as HTML
+Rendered activities/_form.html.erb (9.7ms)
+Rendered activities/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /activities.css - 304 Not Modified (2ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:10:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/activities" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+  Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIBLJtoJoYW+T+bTHoi2CevNGqKYVFOFwKLR/UvcMpc=", "activity"=>{"title"=>"Hike the Y", "duration"=>"3", "price"=>"4.50", "description"=>"Fun but steep hike", "location"=>"Y Mountain", "attribute_id"=>"1"}, "commit"=>"Create Activity"}
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "activities" ("attribute_id", "created_at", "description", "duration", "location", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["attribute_id", 1], ["created_at", Tue, 22 Nov 2011 06:11:17 UTC +00:00], ["description", "Fun but steep hike"], ["duration", 3], ["location", "Y Mountain"], ["price", #<BigDecimal:7fa925f3e2a8,'0.45E1',18(18)>], ["title", "Hike the Y"], ["updated_at", Tue, 22 Nov 2011 06:11:17 UTC +00:00]]
+Redirected to http://localhost/activities/1
+Completed 302 Found in 11ms
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mActivity Load (0.1ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered activities/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:11:17 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateAttributes (20111122060750)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "attributes"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20111122060750'[0m
+Migrating to CreateActivities (20111122060632)
+  [1m[35m (0.3ms)[0m  DROP TABLE "activities"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20111122060632'[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("outings")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("specific_outings")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2011-11-21 23:12:33 -0700
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'activities'):
+  app/controllers/activities_controller.rb:16:in `show'
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2011-11-21 23:14:06 -0700
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'activities'):
+  app/controllers/activities_controller.rb:16:in `show'
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.1ms)
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2011-11-21 23:14:07 -0700
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'activities'):
+  app/controllers/activities_controller.rb:16:in `show'
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2011-11-21 23:14:27 -0700
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::StatementInvalid (Could not find table 'activities'):
+  app/controllers/activities_controller.rb:16:in `show'
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.8ms)
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2011-11-21 23:14:29 -0700
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'activities'):
+  app/controllers/activities_controller.rb:16:in `show'
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.2ms)
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2011-11-21 23:14:30 -0700
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'activities'):
+  app/controllers/activities_controller.rb:16:in `show'
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (21.0ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:14:46 -0700
+  Processing by ActivitiesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::StatementInvalid (Could not find table 'activities'):
+  app/controllers/activities_controller.rb:5:in `index'
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20111121225531)
+Migrating to SorceryRememberMe (20111121225532)
+Migrating to CreateOutings (20111122054300)
+Migrating to CreateSpecificOutingsTable (20111122055925)
+Migrating to CreateActivities (20111122060632)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "duration" decimal, "price" decimal, "description" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111122060632')
+Migrating to CreateAttributes (20111122060750)
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "attributes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111122060750')
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("activities")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("attributes")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("outings")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("specific_outings")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_remember_me_token')
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+  Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.1ms)[0m  [1mSELECT "activities".* FROM "activities" [0m
+Rendered activities/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/activities/new" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+  Processing by ActivitiesController#new as HTML
+Rendered activities/_form.html.erb (8.0ms)
+Rendered activities/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:17 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+  Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.1ms)[0m  SELECT "activities".* FROM "activities" 
+Rendered activities/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:15:21 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 23:18:47 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /activities.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:50 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIBLJtoJoYW+T+bTHoi2CevNGqKYVFOFwKLR/UvcMpc=", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = '' OR email = '') LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 68ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:53 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 23:18:55 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:18:56 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:23:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:04 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-11-21 23:24:05 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+
+Rendered /Users/sean/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+  Processing by OutingsController#index as HTML
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" 
+Rendered outings/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:08 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+  Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.1ms)[0m  [1mSELECT "activities".* FROM "activities" [0m
+Rendered activities/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/attributes" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+  Processing by AttributesController#index as HTML
+  [1m[35mAttribute Load (0.1ms)[0m  SELECT "attributes".* FROM "attributes" 
+Rendered attributes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:12 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:24:32 -0700
+  Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.1ms)[0m  SELECT "activities".* FROM "activities" 
+Rendered activities/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/attributes" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+  Processing by AttributesController#index as HTML
+  [1m[36mAttribute Load (0.1ms)[0m  [1mSELECT "attributes".* FROM "attributes" [0m
+Rendered attributes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+  Processing by OutingsController#index as HTML
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" 
+Rendered outings/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:24:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EIBLJtoJoYW+T+bTHoi2CevNGqKYVFOFwKLR/UvcMpc=", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = '' OR email = '') LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:25:50 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+  Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.1ms)[0m  SELECT "activities".* FROM "activities" 
+Rendered activities/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:52 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+  Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.1ms)[0m  SELECT "activities".* FROM "activities" 
+Rendered activities/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/attributes" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+  Processing by AttributesController#index as HTML
+  [1m[36mAttribute Load (0.1ms)[0m  [1mSELECT "attributes".* FROM "attributes" [0m
+Rendered attributes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+  Processing by OutingsController#index as HTML
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" 
+Rendered outings/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:25:54 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /activities.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /outings.css - 200 OK (0ms)
+Served asset /attributes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /activities.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /attributes.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /outings.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.116 at 2011-11-21 23:26:25 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 192.168.1.116 at 2011-11-21 23:26:30 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+  Processing by OutingsController#index as HTML
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" 
+Rendered outings/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+  Processing by OutingsController#index as HTML
+  [1m[36mOuting Load (0.1ms)[0m  [1mSELECT "outings".* FROM "outings" [0m
+Rendered outings/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:12 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/outings" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+  Processing by OutingsController#index as HTML
+  [1m[35mOuting Load (0.1ms)[0m  SELECT "outings".* FROM "outings" 
+Rendered outings/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /activities.css - 304 Not Modified (0ms)
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /activities.js - 304 Not Modified (0ms)
+Served asset /attributes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /outings.js - 304 Not Modified (0ms)
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+Served asset /activities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /attributes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/outings.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /outings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attributes.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /attributes.js - 304 Not Modified (0ms)
+Served asset /activities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+
+
+Started GET "/assets/outings.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+Served asset /outings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-21 23:27:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
