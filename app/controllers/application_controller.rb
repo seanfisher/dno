@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
   
   private
   def not_authenticated
-    redirect_to login_url, :alert => "Must be logged in to authorize that"
+    redirect_to login_url, :alert => "Nice try, buster, but you have to be more important than you are now to access that page. :("
   end
 end

@@ -1,0 +1,27 @@
+<h1>Listing outings</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Rating</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @outings.each do |outing| %>
+  <tr>
+    <td><%= outing.title %></td>
+    <td><%= outing.description %></td>
+    <td><%= outing.rating %></td>
+    <td><%= link_to 'Show', outing %></td>
+    <td><%= link_to 'Edit', edit_outing_path(outing) %></td>
+    <td><%= link_to 'Destroy', outing, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Outing', new_outing_path %>
