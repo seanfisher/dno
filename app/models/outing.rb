@@ -1,4 +1,5 @@
 class Outing < ActiveRecord::Base
-  has_many :specific_outings
-  has_many :users, :through => :specific_outings
+  belongs_to :user
+  has_many :activity_assignments
+  has_many :activities, :through => :activity_assignments
 end

@@ -1,5 +1,5 @@
 Dno::Application.routes.draw do
-  resources :attributes
+  resources :categories
 
   resources :activities
 
@@ -9,7 +9,7 @@ Dno::Application.routes.draw do
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   resources :users
-  resources :sessions
+  resources :sessions, :only => [:new, :create, :destroy]
   get "secret" => "home#secret", :as => "secret"
   root :to => "home#index"
 

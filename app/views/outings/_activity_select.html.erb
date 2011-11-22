@@ -1,0 +1,2 @@
+<%= check_box_tag "outing[activity_ids][]", activity.id, outing.activities.include?(activity), :id => "outing_activity_ids_#{activity.id}" -%>
+<%= label_tag "outing_activity_ids_#{activity.id}", activity.title %>

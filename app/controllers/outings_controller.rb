@@ -25,6 +25,7 @@ class OutingsController < ApplicationController
   # GET /outings/new.json
   def new
     @outing = Outing.new
+    @activities = Activity.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class OutingsController < ApplicationController
   # GET /outings/1/edit
   def edit
     @outing = Outing.find(params[:id])
+    @activities = Activity.find(:all)
   end
 
   # POST /outings
@@ -57,6 +59,8 @@ class OutingsController < ApplicationController
   # PUT /outings/1.json
   def update
     @outing = Outing.find(params[:id])
+    
+    @outing.attributes = {'activity_ids' => []}.merge(params[:outing] || {})
 
     respond_to do |format|
       if @outing.update_attributes(params[:outing])

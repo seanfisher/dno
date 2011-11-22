@@ -1,6 +1,6 @@
-class CreateAttributes < ActiveRecord::Migration
+class CreateCategories < ActiveRecord::Migration
   def change
-    create_table :attributes do |t|
+    create_table :categories do |t|
       t.string :title
       t.string :description
 

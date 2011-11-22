@@ -4,6 +4,7 @@ class CreateOutings < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.integer :rating
+      t.integer :user_id
 
       t.timestamps
     end

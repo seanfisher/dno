@@ -23,6 +23,18 @@
     <%= f.label :rating %><br />
     <%= f.number_field :rating %>
   </div>
+  <div>
+  	<fieldset>
+  		<legend>Activities</legend>
+  		<ul>
+  		<% @activities.each do |activity|  %>
+  			<li>
+  				<%= render "activity_select", :outing => @outing, :activity => activity %>
+  			</li>
+  		<% end %>
+  		</ul>
+  	</fieldset>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

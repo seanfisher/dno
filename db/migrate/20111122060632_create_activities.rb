@@ -6,6 +6,7 @@ class CreateActivities < ActiveRecord::Migration
       t.decimal :price
       t.string :description
       t.string :location
+      t.integer :user_id
 
       t.timestamps
     end
